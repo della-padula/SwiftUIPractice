@@ -16,32 +16,26 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("Main Title")
-                .font(.largeTitle)
-                .border(Color.black)
-                .padding()
+            Button(action: buttonPressed) {
+                Text("Click Me")
+            }
             
-            Text("Main Title")
-                .font(.largeTitle)
-                .padding()
-                .border(Color.black)
+            Button(action: {
+                
+            }) {
+                Text("Click Me Closure")
+            }
             
+            Button(action: {
+                
+            }) {
+                Image(systemName: "square.and.arrow.down")
+            }
         }
-        //        let myString: String = "Welcome to Swift UI"
-        //
-        //        return VStack {
-        //            VStack {
-        //                Text("Text 1")
-        //                Text("Text 2")
-        //                MyHStackView()
-        //                HStack {
-        //                    Text("Text 3")
-        //                    Text("Text 4")
-        //                }
-        //                Text("Hello, ") + Text("How ") + Text("are you?")
-        //            }
-        //            Text("\(myString)")
-        //        }
+    }
+    
+    func buttonPressed() {
+        
     }
 }
 
