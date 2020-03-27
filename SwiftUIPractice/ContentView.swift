@@ -18,23 +18,30 @@ struct ContentView: View {
         VStack {
             Text("Main Title")
                 .font(.largeTitle)
-            carStack
+                .border(Color.black)
+                .padding()
+            
+            Text("Main Title")
+                .font(.largeTitle)
+                .padding()
+                .border(Color.black)
+            
         }
-//        let myString: String = "Welcome to Swift UI"
-//
-//        return VStack {
-//            VStack {
-//                Text("Text 1")
-//                Text("Text 2")
-//                MyHStackView()
-//                HStack {
-//                    Text("Text 3")
-//                    Text("Text 4")
-//                }
-//                Text("Hello, ") + Text("How ") + Text("are you?")
-//            }
-//            Text("\(myString)")
-//        }
+        //        let myString: String = "Welcome to Swift UI"
+        //
+        //        return VStack {
+        //            VStack {
+        //                Text("Text 1")
+        //                Text("Text 2")
+        //                MyHStackView()
+        //                HStack {
+        //                    Text("Text 3")
+        //                    Text("Text 4")
+        //                }
+        //                Text("Hello, ") + Text("How ") + Text("are you?")
+        //            }
+        //            Text("\(myString)")
+        //        }
     }
 }
 
