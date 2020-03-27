@@ -9,22 +9,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    var carStack = HStack {
+        Text("Car Image")
+        Image(systemName: "car.fill")
+    }
+    
     var body: some View {
-        let myString: String = "Welcome to Swift UI"
-        
-        return VStack {
-            VStack {
-                Text("Text 1")
-                Text("Text 2")
-                MyHStackView()
-                HStack {
-                    Text("Text 3")
-                    Text("Text 4")
-                }
-                Text("Hello, ") + Text("How ") + Text("are you?")
-            }
-            Text("\(myString)")
+        VStack {
+            Text("Main Title")
+                .font(.largeTitle)
+            carStack
         }
+//        let myString: String = "Welcome to Swift UI"
+//
+//        return VStack {
+//            VStack {
+//                Text("Text 1")
+//                Text("Text 2")
+//                MyHStackView()
+//                HStack {
+//                    Text("Text 3")
+//                    Text("Text 4")
+//                }
+//                Text("Hello, ") + Text("How ") + Text("are you?")
+//            }
+//            Text("\(myString)")
+//        }
     }
 }
 
