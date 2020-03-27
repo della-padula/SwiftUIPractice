@@ -31,6 +31,14 @@ struct ContentView: View {
             }) {
                 Image(systemName: "square.and.arrow.down")
             }
+            
+            Text("Hello World")
+            .onAppear(perform: {
+                // 뷰가 나타날 떄
+            })
+            .onDisappear(perform: {
+                // 뷰가 사라질 때
+            })
         }
     }
     
