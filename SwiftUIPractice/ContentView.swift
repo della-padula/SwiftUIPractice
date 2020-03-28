@@ -30,8 +30,30 @@ struct ContentView: View {
                 .padding(5)
             }
             .padding(5)
+            
+            limit
         }
         .padding(5)
+    }
+    
+    var limit: some View {
+        VStack {
+            Group {
+                Text("Sample Text")
+                Text("Sample Text")
+                Text("Sample Text")
+                Text("Sample Text")
+                Text("Sample Text")
+            }
+            
+            Group {
+                Text("Sample Text")
+                Text("Sample Text")
+                Text("Sample Text")
+                Text("Sample Text")
+                Text("Sample Text")
+            }
+        }
     }
 }
 
