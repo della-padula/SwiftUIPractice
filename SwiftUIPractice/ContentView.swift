@@ -9,50 +9,29 @@
 import SwiftUI
 
 struct ContentView: View {
-    var carStack = HStack {
-        Text("Car Image")
-        Image(systemName: "car.fill")
-    }
-    
     var body: some View {
-        VStack {
-            Button(action: buttonPressed) {
-                Text("Click Me")
-            }
+        VStack(alignment: .center, spacing: 15) {
+            Text("Finalcial Results").font(.title)
             
-            Button(action: {
-                
-            }) {
-                Text("Click Me Closure")
+            HStack(alignment: .top) {
+                Text("Q1 Sales").font(.headline)
+                Spacer()
+                VStack(alignment: .leading) {
+                    Text("January")
+                    Text("February")
+                    Text("March")
+                }
+                Spacer()
+                VStack(alignment: .leading) {
+                    Text("$1000")
+                    Text("$200")
+                    Text("$3000")
+                }
+                .padding(5)
             }
-            
-            Button(action: {
-                
-            }) {
-                Image(systemName: "square.and.arrow.down")
-            }
-            
-            Text("Hello World")
-            .onAppear(perform: {
-                // 뷰가 나타날 떄
-            })
-            .onDisappear(perform: {
-                // 뷰가 사라질 때
-            })
+            .padding(5)
         }
-    }
-    
-    func buttonPressed() {
-        
-    }
-}
-
-struct MyHStackView: View {
-    var body: some View {
-        HStack {
-            Text("Text 5")
-            Text("Text 6")
-        }
+        .padding(5)
     }
 }
 
@@ -61,3 +40,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
